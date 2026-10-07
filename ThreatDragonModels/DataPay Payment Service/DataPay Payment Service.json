@@ -172,123 +172,6 @@
           },
           {
             "position": {
-              "x": 1068,
-              "y": 520
-            },
-            "size": {
-              "width": 110,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "External Acquiring Bank"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "8b09c3ca-a632-492f-837c-dcf7175c0fb6"
-                },
-                {
-                  "group": "right",
-                  "id": "4d1b716d-065f-4cdd-aa30-0889c7792d9a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "007c42df-84e5-45f0-b5b9-3bbbf1f8110e"
-                },
-                {
-                  "group": "left",
-                  "id": "287687a1-1fd2-4c7a-80a6-21d6ab15182b"
-                }
-              ]
-            },
-            "id": "aa7b6f93-28b6-4033-8b86-d633df0275b7",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Actor",
-              "name": "External Acquiring Bank",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 1093,
               "y": 145
             },
@@ -410,7 +293,7 @@
           {
             "position": {
               "x": 1093,
-              "y": 275
+              "y": 245
             },
             "size": {
               "width": 60,
@@ -529,8 +412,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": 390
+              "x": 946.75,
+              "y": 330
             },
             "size": {
               "width": 120,
@@ -653,8 +536,8 @@
           },
           {
             "position": {
-              "x": 1260,
-              "y": 390
+              "x": 1179.25,
+              "y": 330
             },
             "size": {
               "width": 120,
@@ -1030,7 +913,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTPS/TLS\n",
+              "name": "HTTPS/TLS",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1044,18 +927,135 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "HTTPS/TLS\n"
+              "HTTPS/TLS"
             ],
-            "id": "b9f3f048-42a8-40c4-969b-e5b8e7e02067",
+            "id": "15ca1b33-3d0d-4530-818f-9d01dab31303",
             "source": {
-              "cell": "aa7b6f93-28b6-4033-8b86-d633df0275b7",
-              "port": "8b09c3ca-a632-492f-837c-dcf7175c0fb6"
-            },
-            "target": {
               "cell": "a157e8ee-e95c-44fd-b13a-fe14412aab22",
               "port": "652e8507-be2d-490c-85bc-a217d98959b7"
             },
+            "target": {
+              "cell": "df8e0204-21fa-4c56-b0fa-841f0c1a4fb1",
+              "port": "8b09c3ca-a632-492f-837c-dcf7175c0fb6"
+            },
             "vertices": []
+          },
+          {
+            "position": {
+              "x": 1066.75,
+              "y": 551
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "External Acquiring Bank"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "8b09c3ca-a632-492f-837c-dcf7175c0fb6"
+                },
+                {
+                  "group": "right",
+                  "id": "4d1b716d-065f-4cdd-aa30-0889c7792d9a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "007c42df-84e5-45f0-b5b9-3bbbf1f8110e"
+                },
+                {
+                  "group": "left",
+                  "id": "287687a1-1fd2-4c7a-80a6-21d6ab15182b"
+                }
+              ]
+            },
+            "id": "df8e0204-21fa-4c56-b0fa-841f0c1a4fb1",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "External Acquiring Bank",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ]
       }
