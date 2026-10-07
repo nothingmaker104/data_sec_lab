@@ -138,8 +138,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a9944de6-8eb7-4d1d-99a6-95f3819893f9",
-                "ea7378a9-c53b-4a6b-bb04-ca099598f7b4"
+                "ea7378a9-c53b-4a6b-bb04-ca099598f7b4",
+                "a9944de6-8eb7-4d1d-99a6-95f3819893f9"
               ],
               "containedElements": [
                 "8de9db2c-6ac4-4e4c-962c-6459b669bf54",
@@ -883,104 +883,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "gRPC / mTLS",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "4c054c71-d2b9-482c-a504-2c205d5e4d0d"
-              ]
-            },
-            "labels": [
-              "gRPC / mTLS"
-            ],
-            "id": "73825a54-37c0-4d77-a9e4-4a801a30e636",
-            "source": {
-              "cell": "e111f7cb-0872-4ea5-9f39-f30ceec62f79",
-              "port": "652e8507-be2d-490c-85bc-a217d98959b7"
-            },
-            "target": {
-              "cell": "a157e8ee-e95c-44fd-b13a-fe14412aab22",
-              "port": "69a554e3-402f-4b05-9cd1-4751d363e933"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "SQL",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "2e7b0285-1591-4ede-b082-de9cf4bc1686"
-              ]
-            },
-            "labels": [
-              "SQL"
-            ],
-            "id": "a9944de6-8eb7-4d1d-99a6-95f3819893f9",
-            "source": {
-              "cell": "a157e8ee-e95c-44fd-b13a-fe14412aab22",
-              "port": "2ee6fc49-8984-4cbb-88e3-db78a6d842f6"
-            },
-            "target": {
-              "cell": "8de9db2c-6ac4-4e4c-962c-6459b669bf54",
-              "port": "1fe93d74-d4f5-4198-89aa-ba0bafa98345"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Redis/TLS",
               "description": "",
               "outOfScope": false,
@@ -1061,7 +963,146 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "gRPC / mTLS",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b29a0ecb-28a8-4eb7-ab48-b3beed2714f2",
+                  "title": "TH-02 — Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Изменение данных платежа при передаче.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "4c054c71-d2b9-482c-a504-2c205d5e4d0d"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "gRPC / mTLS"
+            ],
+            "id": "73825a54-37c0-4d77-a9e4-4a801a30e636",
+            "source": {
+              "cell": "e111f7cb-0872-4ea5-9f39-f30ceec62f79",
+              "port": "652e8507-be2d-490c-85bc-a217d98959b7"
+            },
+            "target": {
+              "cell": "a157e8ee-e95c-44fd-b13a-fe14412aab22",
+              "port": "69a554e3-402f-4b05-9cd1-4751d363e933"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SQL",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8666ab85-3d4e-4aa5-8605-e240fa8d3c1c",
+                  "title": "TH-04 — Information Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Утечка PAN/ИИН через данные или логи.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "2e7b0285-1591-4ede-b082-de9cf4bc1686"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "SQL"
+            ],
+            "id": "a9944de6-8eb7-4d1d-99a6-95f3819893f9",
+            "source": {
+              "cell": "a157e8ee-e95c-44fd-b13a-fe14412aab22",
+              "port": "2ee6fc49-8984-4cbb-88e3-db78a6d842f6"
+            },
+            "target": {
+              "cell": "8de9db2c-6ac4-4e4c-962c-6459b669bf54",
+              "port": "1fe93d74-d4f5-4198-89aa-ba0bafa98345"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1082,15 +1123,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "5fe41264-2942-47b4-9e65-330fc45d780a",
+                  "title": "TH-05 Denial of Service.",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "4c054c71-d2b9-482c-a504-2c205d5e4d0d"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "labels": [
               "HTTPS\n"
@@ -1228,6 +1288,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 7
   }
 }
